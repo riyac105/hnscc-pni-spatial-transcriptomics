@@ -1,0 +1,13 @@
+# Update versions to match the final manuscript environment
+scanpy
+anndata
+harmonypy
+numpy
+pandas
+scipy
+scikit-learn
+matplotlib
+seaborn
+lifelines
+statsmodels
+jupyter

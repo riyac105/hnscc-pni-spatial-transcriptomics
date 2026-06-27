@@ -1,0 +1,21 @@
+name: hnscc-pni-spatial
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python=3.11
+  - r-base
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  - matplotlib
+  - jupyter
+  - pip
+  - pip:
+      - scanpy
+      - anndata
+      - harmonypy
+      - lifelines
+      - statsmodels

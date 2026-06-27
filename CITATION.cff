@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+title: "Spatial Neuroimmune Crosstalk Driving Perineural Invasion in Head and Neck Squamous Cell Carcinoma"
+message: "If you use this repository, please cite the associated manuscript and archived Zenodo record."
+type: software
+version: "1.0.0"
+date-released: "2026-06-26"
+authors:
+  - family-names: Chhabra
+    given-names: Riya
+  - family-names: Kao
+    given-names: Alfred
+  - family-names: Ding
+    given-names: Reena
+  - family-names: Bajaj
+    given-names: Suravi
+  - family-names: Jackson
+    given-names: Symphony Griffith
+  - family-names: Li
+    given-names: Wei Tse
+  - family-names: John
+    given-names: Daniel J.
+  - family-names: Wang-Rodriguez
+    given-names: Jessica
+  - family-names: Ongkeko
+    given-names: Weg M.
+repository-code: "https://github.com/[OWNER]/hnscc-pni-spatial-transcriptomics"
+license: MIT
+keywords:
+  - head and neck squamous cell carcinoma
+  - perineural invasion
+  - spatial transcriptomics
+  - tumor-nerve crosstalk
+  - neuroimmune microenvironment
+  - HPV-negative HNSCC
+  - Xenium
+  - Visium
+  - prognostic biomarker
+  - epithelial-mesenchymal transition
