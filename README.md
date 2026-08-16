@@ -10,18 +10,16 @@ Authors: Riya Chhabra, Alfred Kao, Reena Ding, Suravi Bajaj, Symphony Griffith J
 
 Perineural invasion (PNI) is a clinically important feature of aggressive head and neck squamous cell carcinoma (HNSCC). This project integrates single-cell-resolution Xenium spatial transcriptomics, Visium spatial transcriptomics, and bulk transcriptomic validation cohorts to characterize the tumor–nerve microenvironment, HPV-stratified nerve-proximal tumor behavior, immune organization, and prognostic relevance of a spatially derived NFE2L2/MDM2/PPARG gene signature.
 
-## Analyses included
+## Analysis workflow
 
-The analysis workflow includes:
-
-1. Xenium preprocessing and quality control
-2. Cell-type annotation and validation
-3. Nerve-associated cell scoring and spatial zone assignment
-4. Tumor–nerve proximity and exploratory perineural invasion index analyses
-5. Differential expression and pseudobulk analyses of perineural versus distal tumor cells
-6. Visium spatial transcriptomic analysis, UCell signature scoring, EMT/PNI enrichment analyses, and SpatialCellChat inference
-7. TCGA-HNSC and GSE65858 bulk transcriptomic survival validation of the NFE2L2/MDM2/PPARG signature
-8. Figure generation and supplementary analyses
+| Manuscript analysis | Script |
+|---|---|
+| Xenium preprocessing and annotation | scripts/01-10 |
+| Visium preprocessing, UCell scoring, EMT analysis | scripts/11_visium_preprocessing_signature_scoring.R |
+| SpatialCellChat analysis | scripts/12_spatialcellchat_visium.R |
+| TCGA-HNSC survival analysis | scripts/13a_tcga_hnsc_survival_primarytumor.py |
+| TCGA multivariable Cox analysis | scripts/13b_tcga_hnsc_multivariable_cox.py |
+| GSE65858 external survival analysis | scripts/14_gse65858_survival.py |
 
 ## Public datasets
 
