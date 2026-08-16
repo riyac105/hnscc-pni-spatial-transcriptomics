@@ -60,6 +60,32 @@ Performs spatial neighborhood enrichment analysis around nerve-associated cells 
 
 Validates the DC_LAMP3/mature dendritic cell annotation using curated marker gene scoring and marker specificity analysis.
 
+### 11_visium_preprocessing_signature_scoring.R
+Processes seven public HNSCC Visium tissue sections using Seurat,
+including QC, SCTransform normalization, Harmony integration,
+cell-type annotation, UCell-based nerve/PNI scoring, EMT scoring,
+and generation of Figure 5A-D analyses.
+
+### 12_spatialcellchat_visium.R
+Performs SpatialCellChat analysis on three Visium sections with
+sufficient nerve-associated spots (GSM8633893, GSM5494475,
+GSM5494476), including spatially constrained ligand-receptor
+inference and Figure 5E visualization.
+
+### 13a_tcga_hnsc_survival_primarytumor.py
+Reproduces the TCGA-HNSC primary-tumor survival analysis for the
+NFE2L2/MDM2/PPARG composite signature, including HPV-stratified
+Kaplan-Meier analyses and REMARK cohort/event reporting.
+
+### 13b_tcga_hnsc_multivariable_cox.py
+Performs the primary multivariable TCGA-HNSC Cox regression
+adjusting for age and AJCC stage using complete-case analysis.
+
+### 14_gse65858_survival.py
+Reproduces the GSE65858 external survival analysis of the
+NFE2L2/MDM2/PPARG signature, including HPV-stratified 5-year
+Kaplan-Meier analyses and REMARK cohort/event reporting.
+
 ## Notes
 
 Raw spatial transcriptomic and bulk transcriptomic datasets are not included in this repository. Users should download the required public datasets from GEO, TCGA-HNSC/cBioPortal, and GSE65858 as described in the main repository README and manuscript.
